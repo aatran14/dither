@@ -147,7 +147,7 @@ def apply_all(img, output_dir="supa_outputs"):
         result = method(img)
         result.save(os.path.join(output_dir, name))
 
-    print(f"\n✅ All dithers complete. Images saved in '{output_dir}'.")
+    print(f"\n;) All dithers complete. Images saved in '{output_dir}'.")
 
 if __name__ == "__main__":
     filename = input("Enter image filename (in same folder): ").strip()
@@ -155,4 +155,4 @@ if __name__ == "__main__":
         img = load_image(filename)
         apply_all(img)
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f":( Error: {e}")
